@@ -1,0 +1,20 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, color TEXT, style TEXT, size TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO store VALUES (1, "Paint", "red", "oil", "small", 5, 11);
+INSERT INTO store VALUES (2, "Paint", "black","oil","small", 4, 12);
+INSERT INTO store VALUES (3, "Paint", "purple","oil", "small", 7, 10);
+INSERT INTO store VALUES (4, "Paint", "green", "oil", "small", 6, 12);
+INSERT INTO store VALUES (5, "Paint", "blue", "oil","small", 4, 12);
+INSERT INTO store VALUES (6, "Paint", "yellow", "oil", "small", 6, 22);
+INSERT INTO store VALUES (7, "Brush", "red", "oil", "large", 11, 31);
+INSERT INTO store VALUES (8, "Brush", "black", "oil", "large", 12, 23);
+INSERT INTO store VALUES (9, "Brush", "brown", "oil", "large", 9, 13);
+INSERT INTO store VALUES (10, "yarn", "purple", "cotton", "medium", 6, 14);
+INSERT INTO store VALUES (11, "yarn", "green", "cotton", "medium", 10, 24);
+INSERT INTO store VALUES (12, "yarn", "pink", "cotton", "medium", 5, 14);
+INSERT INTO store VALUES (13, "needles", "black", "sewing", "small", 12, 15);
+INSERT INTO store VALUES (14, "needles", "black", "sewing", "medium", 9, 15);
+INSERT INTO store VALUES (15, "needles", "black", "sewing", "large", 11, 15);
+
+SELECT * FROM store ORDER BY price;
+SELECT SUM(quantity) FROM store;
